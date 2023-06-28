@@ -9,4 +9,47 @@ body{
   direction: rtl;
   font-family: 'Vazirmatn', sans-serif;
   background-color: #f4bf01;
+  
+}
+.area{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  background-color: #262626;
+  width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  height: 60vh;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.right-circ{
+  position: absolute;
+  right: -150px;
+  top: -150px;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(to top, #24bfc3 , #3ebea7);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left-circ{
+  position: absolute;
+  left: -150px;
+  bottom: -150px;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(to top, #ff8c04 , #f4bf01);
+  border-radius: 50%;
+  z-index: 1;
 }

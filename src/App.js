@@ -1,8 +1,10 @@
-
+import Main from "./Main";
 
 function App() {
   return (
-555
+    <div className="area">
+      <Main/>
+    </div>
   );
 }
 
