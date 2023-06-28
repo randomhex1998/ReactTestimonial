@@ -7,6 +7,22 @@ const Box = () => {
 
     const [index , setIndex] = useState(0);
     const {name , para , img } = data[index];
+
+
+    const rightHandler = () => {
+        setIndex(index => {
+            let newIndex = index + 1;
+            return newIndex; 
+        })
+    }
+
+    const leftHandler = () => {
+        setIndex(index => {
+            let newIndex = index + 1;
+            return newIndex; 
+        })
+    }
+    
     return (
         <div className='box-area'>
             <div className='box'>
@@ -15,8 +31,8 @@ const Box = () => {
                 <p className='para'> {para} </p>
             </div>
             <div className='btns-box'>
-                <button className='btn btn-right'><FaChevronRight/></button>
-                <button className='btn btn-left'><FaChevronLeft/></button>
+                <button className='btn btn-right' onClick={rightHandler}><FaChevronRight/></button>
+                <button className='btn btn-left' onClick={leftHandler}><FaChevronLeft/></button>
             </div>
         </div>
     );
