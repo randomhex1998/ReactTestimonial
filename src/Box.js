@@ -1,14 +1,18 @@
-import React from 'react';
-import RayanProfile from "./img/rayan.jpg";
-import {FaChevronLeft , FaChevronRight} from "react-icons/fa"
+import React, { useState } from 'react';
+
+import {FaChevronLeft , FaChevronRight} from "react-icons/fa";
+import data from "./data";
 
 const Box = () => {
+
+    const [index , setIndex] = useState(0);
+    const {name , para , img } = data[index];
     return (
         <div className='box-area'>
             <div className='box'>
-                <div className='img-area'><img src={RayanProfile} alt="" /></div>
-                <h3 className='title'>رایان جابری</h3>
-                <p className='para'>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و بارم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با ، و</p>
+                <div className='img-area'><img src={img} alt="" /></div>
+                <h3 className='title'> {name}</h3>
+                <p className='para'> {para} </p>
             </div>
             <div className='btns-box'>
                 <button className='btn btn-right'><FaChevronRight/></button>
