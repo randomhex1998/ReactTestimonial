@@ -102,5 +102,9 @@ body{
   width: 25px;
   height: 25px;
   background-color: #d2d2d2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
 
