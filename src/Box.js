@@ -8,21 +8,32 @@ const Box = () => {
     const [index , setIndex] = useState(0);
     const {name , para , img } = data[index];
 
+    const checkNumber = (item) => {
+        if(item > data.length-1 ) {
+            return  0;
+        }
+        if(item < 0 ) {
+            return  data.length -1 
+        }
+
+        return item;
+    } 
+
 
     const rightHandler = () => {
         setIndex(index => {
             let newIndex = index + 1;
-            return newIndex; 
+            return checkNumber(newIndex); 
         })
     }
 
     const leftHandler = () => {
         setIndex(index => {
             let newIndex = index + 1;
-            return newIndex; 
+            return checkNumber(newIndex); 
         })
     }
-    
+
     return (
         <div className='box-area'>
             <div className='box'>
