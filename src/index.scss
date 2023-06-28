@@ -41,6 +41,7 @@ body{
   background: linear-gradient(to top, #24bfc3 , #3ebea7);
   border-radius: 50%;
   z-index: 1;
+  display: none;
 }
 
 .left-circ{
@@ -52,7 +53,10 @@ body{
   background: linear-gradient(to top, #ff8c04 , #f4bf01);
   border-radius: 50%;
   z-index: 1;
+  display: none;
 }
+
+
 
 .box{
   background-color: rgba(255, 255, 255, 0.150);
@@ -108,3 +112,21 @@ body{
   cursor: pointer;
 }
 
+@media screen and (min-width: 795.5px) {
+  
+  .left-circ{
+    display: block;
+    
+  }
+  .right-circ{
+    display: block;
+    
+  }
+}
+
+@media screen and (max-width: 695.5px) {
+
+  .box {
+    width: 100%;
+  }
+}
